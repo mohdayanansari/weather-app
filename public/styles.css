@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.container {
+.app-container {
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -23,10 +23,11 @@
   align-items: center;
   background-color: var(--light);
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
-
-.container h1 {
+/* .form-container{
+} */
+.app-container h1 {
   font-family: "Sacramento", cursive;
   font-size: 5rem;
   color: var(--pink);
@@ -59,9 +60,45 @@ button {
   cursor: pointer;
   transition: 0.2s;
 }
-button:hover{
-    transform: scale(0.9);
+button:hover {
+  transform: scale(0.9);
 }
-button:active{
-    transform: scale(0.85);
+button:active {
+  transform: scale(0.85);
+}
+
+/* !==FOOTER */
+footer {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: whitesmoke;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 30px;
+  top: -60px;
+  left: -5px;
+  background-color: var(--blue);
+  transform: rotate(-4deg);
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  top: -72px;
+  right: -40px;
+  background-color: var(--blue);
+  transform: rotate(-90deg);
 }
